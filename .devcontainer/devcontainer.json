@@ -1,0 +1,18 @@
+{
+    "name": "ROS Noetic Development",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-iot.vscode-ros",  // ROSサポート
+                "ms-python.python",  // Pythonサポート
+                "eamodio.gitlens"    // Git拡張
+            ]
+        }
+    },
+    "workspaceFolder": "/workspace",
+    "remoteUser": "root",
+    "postCreateCommand": "source /opt/ros/noetic/setup.bash && colcon build || echo 'No packages to build'"
+}
