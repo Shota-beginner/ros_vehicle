@@ -1,0 +1,53 @@
+# catkin build / colcon build directories
+build/
+devel/
+install/
+log/
+logs/
+
+# ROS2 specific files
+.colcon/
+
+# ROS cache files
+.catkin_workspace
+.catkin_tools/
+
+# Ignore editor and IDE settings
+.vscode/
+.idea/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Backup files
+*.bak
+*.swp
+*.tmp
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Dependencies installed locally
+venv/
+.env
+
+# Ignore files for package dependencies
+src/*/CMakeLists.txt.user
+src/*/CMakeLists.txt.autosave
+
+# Custom launch/log files (if generated dynamically)
+*.launch~
+*.log~
+
+# Ignore compiled object files and libraries
+*.o
+*.a
+*.so
+*.dll
+*.dylib
+
+# setting
+.devcontainer/
